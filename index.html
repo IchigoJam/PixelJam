@@ -16,6 +16,36 @@ const ICON_I = `
   00333300
 `;
 
+const ICON_SACCHAN_1 = `
+11177111
+11166111
+11755711
+11566511
+11122111
+11222211
+11166111
+11100111`;
+
+const SPR_SACCHAN_2 = `
+61177116
+15766751
+11555511
+11155111
+11222211
+11066011
+11111111
+11111111`;
+
+const SPR_SACCHAN_3 = `
+61177116
+15766751
+11555511
+11155111
+11122111
+11222211
+11166111
+11100111`;
+
 for (let i = 0;; i++) {
   const frame = i;
   const x = 64 + Math.sin(frame * 0.05) * 30;
@@ -26,6 +56,7 @@ for (let i = 0;; i++) {
   print("ARROWS + Space/Z/X", 2, 10, R_PURPLE);
   circfill(x, y, 7, btn(4) ? RED : PINK);
   spr(ICON_I, x + 10, y - 3);
+  spr(ICON_SACCHAN_1, x + 20, y - 3, 1);
   line(0, 127, 127, 0, GREEN);
 
   const y0 = 30;
