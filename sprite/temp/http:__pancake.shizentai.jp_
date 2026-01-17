@@ -1,0 +1,626 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>PanCake</title>
+	<meta name="keywords" content="PanCake,パンケーキ,こどもサウンドグラボ,IchigoJam" />
+	<meta name="description" content="こどもサウンドグラボPanCake" />
+	<meta property="og:title" content="こどもサウンドグラボPanCake" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pancake.shizentai.jp/" />
+	<meta property="og:locale" content="ja_JP" />
+	<meta property="og:image" content="http://pancake.shizentai.jp/image/mainvisual.png" />
+	<meta property="og:site_name" content="こどもサウンドグラボPanCake" />
+	<script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="./common/master.js"></script>
+	<link rel="shortcut icon" type="image/png" href="./image/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="./common/style.css?200917" />
+</head>
+
+<body>
+<a id="top"></a>
+
+<div id="language"><a href="./index_en.html">English</a></div>
+
+	<div id="mainvisual"><h1><img src="./image/mainvisual.png" alt="PanCake" /></h1></div>
+	<div id="news">
+		<h2>What's NEW!</h2>
+		<ul>
+			<li>2020/09/17 PanCake C Ver1.2.1をリリース <span>NEW!</span>
+			<li>2017/11/24 PanCake C Ver1.2をリリース</li>
+			<li>2017/03/15 PanCake Ver1.2をリリース</li>
+			<li>2017/02/16 PanCake Ver1.1.1をリリース</li>
+			<!-- <li>2017/01/17 PanCake Ver1.1をリリース</li> -->
+			<!-- <li>2016/04/13 <a href="#sample">PanCakeサンプルゲーム第2弾登場！</a><span>NEW!</span></li> -->
+			<!-- <li>2015/10/26 <a href="#want">組み立て済完成品、IchigoJam+PanCakeセット登場！</a></li> -->
+			<!-- <li>2015/10/05 <a href="#want">PanCake プリント基板キットが新登場！</a></li> -->
+			<!-- <li>2015/09/25 <a href="#want">入手方法</a>、<a href="#support">サポートリンク</a>を追加しました。</li> -->
+			<li>2015/08/20 PanCake Ver1.0をリリース</li>
+			<!-- <li>2015/03/12 PanCake Ver0.9をリリース</li> -->
+			<!-- <li>2015/02/18 PanCake Ver0.8をリリース</li> -->
+		</ul>
+	</div><!-- /#news -->
+
+	<div id="container">
+		<div id="download">
+			<p><a href="PanCake.1.2.zip" target="_blank"><img src="./image/download.png" alt="DOWNLOAD" /></a><br/>PanCake Ver1.2 * 2017/11/24<br />PanCake C Ver1.2.1 * 2020/09/17</p>
+			<div id="note">
+				<p>IchigoCake用ファームウェア「PanCake C」において、下記の不具合があったことを確認しました。「PanCake C」をお使いいただく場合は、バージョン 1.2.1をお使いください。</p>
+				<dl>
+					<dt>[不具合の内容]</dt>
+					<dd>スプライト番号が小さい方が上に重なってしまう。(仕様上はスプライト番号が大きい方が上に重なる)</dd>
+				</dl>
+				<p>
+					なお、本不具合におけるファームウェアバージョンアップサービスは無償で対応させていただきますので、ご希望の方は<a href="#support">お問い合わせ</a>ください。<br />
+					バージョンアップにより、スプライトを使用した保存プログラムが以前と異なる動作をする可能性がございます。あらかじめご了承ください
+				</p>
+			</div>
+		</div>
+
+		<div class="block" id="whats">
+			<h2><img src="./image/what.png" alt="WHAT?" /></h2>
+			<p>
+				こどもサウンドグラボ PanCake です。<br />
+				シリアル通信により制御できます。<br />
+				IchigoJamのTXDをPanCakeのRXDに接続してください。
+			</p>
+			<p class="photo">
+				<img src="./image/photo1.png" alt="" />
+				<img src="./image/photo2.png" alt="" />
+				<iframe width="300" height="225" src="https://www.youtube.com/embed/LjZ03dL1wjA?rel=0" frameborder="0" allowfullscreen></iframe>
+			</p>
+		</div>
+
+		<div class="block" id="want">
+			<h2><img src="./image/want.png" alt="WANT" /></h2>
+			<p>PanCakeの入手方法</p>
+			<div>
+				<dl>
+					<dt><a href="https://hello002.stores.jp/items/55ee83652b34925223000002" target="_blank"><img src="./image/want_circuitboard.png" alt="" /></a><br />PanCake プリント基板キット</dt>
+					<dd>
+						<strong>取り扱い店</strong><br />
+						<a href="https://hello002.stores.jp/items/55ee83652b34925223000002" target="_blank">PCN</a> / <a href="http://akizukidenshi.com/catalog/g/gK-09686/" target="_blank">秋月電子通商</a> / <a href="http://www.aitendo.com/product/12148" target="_blank">aitendo</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt><a href="https://hello002.stores.jp/items/562447672b3492371900de81" target="_blank"><img src="./image/want_circuitboard_pre.png" alt="" /></a><br />PanCake 組み立て済　完成品</dt>
+					<dd>
+						<strong>取り扱い店</strong><br />
+						<a href="https://hello002.stores.jp/items/562447672b3492371900de81" target="_blank">PCN</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt><a href="https://hello002.stores.jp/items/5502743c3cd482cc1400011e" target="_blank"><img src="./image/want_breadboard.png" alt="" /></a><br />PanCake ブレッドボードキット</dt>
+					<dd>
+						<strong>取り扱い店</strong><br />
+						<a href="https://hello002.stores.jp/items/5502743c3cd482cc1400011e" target="_blank">PCN</a> / <a href="http://eleshop.jp/shop/g/gF4U311/" target="_blank">共立エレショップ</a> / <a href="http://www.marutsu.co.jp/pc/i/515096/" target="_blank">マルツ</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt><a href="https://hello002.stores.jp/items/561dfaa03cd4828d1f000285" target="_blank"><img src="./image/want_jampan.png" alt="" /></a><br />IchigoJam+PanCake 完成品セット</dt>
+					<dd>
+						<strong>取り扱い店</strong><br />
+						<a href="https://hello002.stores.jp/items/561dfaa03cd4828d1f000285" target="_blank">PCN</a>
+					</dd>
+				</dl>
+
+			</div>
+		</div>
+
+		<div class="block" id="palette">
+			<h2><img src="./image/palette.png" alt="PALETTE" /></h2>
+		</div>
+
+		<div class="block" id="image">
+			<h2><img src="./image/image.png" alt="IMAGE" /></h2>
+			<ul>
+				<li><img src="./image/image/00.pancake.png" /><br/>00</li>
+				<li><img src="./image/image/01.field.png" /><br/>01</li>
+				<li><img src="./image/image/02.race.png" /><br/>02</li>
+				<li><img src="./image/image/kouya.png" /><br/>03</li>
+				<li><img src="./image/image/water.png" /><br/>04</li>
+				<li><img src="./image/image/sky.png" /><br/>05</li>
+				<li><img src="./image/image/space.png" /><br/>06</li>
+				<li><img src="./image/image/phantasy.png" /><br/>07</li>
+			</ul>
+		</div>
+
+		<div class="block" id="sprite">
+			<h2><img src="./image/sprite.png" alt="SPRITE" /></h2>
+			<ul>
+				<li><img src="./image/sprite/boyclap.1.png" /><br/>00</li>
+				<li><img src="./image/sprite/boyjamp.1.png" /><br/>01</li>
+				<li><img src="./image/sprite/boylwalk.1.png" /><br/>02</li>
+				<li><img src="./image/sprite/boyrstand.1.png" /><br/>03</li>
+				<li><img src="./image/sprite/boyrwalk.1.png" /><br/>04</li>
+				<li><img src="./image/sprite/boysquat.1.png" /><br/>05</li>
+				<li><img src="./image/sprite/boystand.png" /><br/>06</li>
+				<li><img src="./image/sprite/girlclap.1.png" /><br/>07</li>
+				<li><img src="./image/sprite/girljamp.1.png" /><br/>08</li>
+				<li><img src="./image/sprite/girljoy.1.png" /><br/>09</li>
+				<li><img src="./image/sprite/girlrstand.1.png" /><br/>0a</li>
+				<li><img src="./image/sprite/girlrwalk.1.png" /><br/>0b</li>
+				<li><img src="./image/sprite/girlsquat.1.png" /><br/>0c</li>
+				<li><img src="./image/sprite/girlstand.1.png" /><br/>0d</li>
+				<li><img src="./image/sprite/bicycle.8.png" /><br/>0e</li>
+				<li><img src="./image/sprite/carsmall.8.png" /><br/>0f</li>
+
+				<li><img src="./image/sprite/cartop.8.png" /><br/>10</li>
+				<li><img src="./image/sprite/bus.8.png" /><br/>11</li>
+				<li><img src="./image/sprite/track.8.png" /><br/>12</li>
+				<li><img src="./image/sprite/ambulance.8.png" /><br/>13</li>
+				<li><img src="./image/sprite/fireengine.8.png" /><br/>14</li>
+				<li><img src="./image/sprite/Excavator.8.png" /><br/>15</li>
+				<li><img src="./image/sprite/bulldozer.8.png" /><br/>16</li>
+				<li><img src="./image/sprite/boat.0.png" /><br/>17</li>
+				<li><img src="./image/sprite/ship.0.png" /><br/>18</li>
+				<li><img src="./image/sprite/submarine.0.png" /><br/>19</li>
+				<li><img src="./image/sprite/copterr.a.png" /><br/>1a</li>
+				<li><img src="./image/sprite/plane.a.png" /><br/>1b</li>
+				<li><img src="./image/sprite/rocket.0.png" /><br/>1c</li>
+				<li><img src="./image/sprite/ufo.0.png" /><br/>1d</li>
+				<li><img src="./image/sprite/ichigo.1.png" /><br/>1e</li>
+				<li><img src="./image/sprite/apple.0.png" /><br/>1f</li>
+
+				<li><img src="./image/sprite/omusubi.f.png" /><br/>20</li>
+				<li><img src="./image/sprite/meat.0.png" /><br/>21</li>
+				<li><img src="./image/sprite/danbun.f.png" /><br/>22</li>
+				<li><img src="./image/sprite/turtle.0.png" /><br/>23</li>
+				<li><img src="./image/sprite/cat.0.png" /><br/>24</li>
+				<li><img src="./image/sprite/dog.0.png" /><br/>25</li>
+				<li><img src="./image/sprite/elephant.0.png" /><br/>26</li>
+				<li><img src="./image/sprite/fox.0.png" /><br/>27</li>
+				<li><img src="./image/sprite/giraffe.0.png" /><br/>28</li>
+				<li><img src="./image/sprite/rabbit.0.png" /><br/>29</li>
+				<li><img src="./image/sprite/horse.0.png" /><br/>2a</li>
+				<li><img src="./image/sprite/lion.0.png" /><br/>2b</li>
+				<li><img src="./image/sprite/penguin.0.png" /><br/>2c</li>
+				<li><img src="./image/sprite/birdup.a.png" /><br/>2d</li>
+				<li><img src="./image/sprite/birddown.a.png" /><br/>2e</li>
+				<li><img src="./image/sprite/fish.b.png" /><br/>2f</li>
+
+				<li><img src="./image/sprite/jellyfish.b.png" /><br />30</li>
+				<li><img src="./image/sprite/urchin.b.png" /><br />31</li>
+				<li><img src="./image/sprite/sword.0.png" /><br />32</li>
+				<li><img src="./image/sprite/shield.0.png" /><br />33</li>
+				<li><img src="./image/sprite/cane.0.png" /><br />34</li>
+				<li><img src="./image/sprite/coin.0.png" /><br />35</li>
+				<li><img src="./image/sprite/jemblue.0.png" /><br />36</li>
+				<li><img src="./image/sprite/jemgreen.0.png" /><br />37</li>
+				<li><img src="./image/sprite/jempurple.0.png" /><br />38</li>
+				<li><img src="./image/sprite/jemred.0.png" /><br />39</li>
+				<li><img src="./image/sprite/jemyellow.0.png" /><br />3a</li>
+				<li><img src="./image/sprite/key.0.png" /><br />3b</li>
+				<li><img src="./image/sprite/treasure.9.png" /><br />3c</li>
+				<li><img src="./image/sprite/treasure1.9.png" /><br />3d</li>
+				<li><img src="./image/sprite/skull.f.png" /><br />3e</li>
+				<li><img src="./image/sprite/fire.0.png" /><br />3f</li>
+
+				<li><img src="./image/sprite/firea.0.png" /><br />40</li>
+				<li><img src="./image/sprite/fireb.0.png" /><br />41</li>
+				<li><img src="./image/sprite/clock.0.png" /><br />42</li>
+				<li><img src="./image/sprite/stopwatch.8.png" /><br />43</li>
+				<li><img src="./image/sprite/ladder.0.png" /><br />44</li>
+				<li><img src="./image/sprite/heart.0.png" /><br />45</li>
+				<li><img src="./image/sprite/house.f.png" /><br />46</li>
+				<li><img src="./image/sprite/musica.0.png" /><br />47</li>
+				<li><img src="./image/sprite/musicb.0.png" /><br />48</li>
+				<li><img src="./image/sprite/balloon.0.png" /><br />49</li>
+				<li><img src="./image/sprite/flag.0.png" /><br />4a</li>
+				<li><img src="./image/sprite/missile.0.png" /><br />4b</li>
+				<li><img src="./image/sprite/tree.1.png" /><br />4c</li>
+				<li><img src="./image/sprite/rock.1.png" /><br />4d</li>
+				<li><img src="./image/sprite/flower.0.png" /><br />4e</li>
+				<li><img src="./image/sprite/stone.1.png" /><br />4f</li>
+
+				<li><img src="./image/sprite/hole.1.png" /><br />50</li>
+				<li><img src="./image/sprite/fence.0.png" /><br />51</li>
+				<li><img src="./image/sprite/beam1.0.png" /><br />52</li>
+				<li><img src="./image/sprite/beam2.0.png" /><br />53</li>
+				<li><img src="./image/sprite/beam3.0.png" /><br />54</li>
+				<li><img src="./image/sprite/beam4.0.png" /><br />55</li>
+				<li><img src="./image/sprite/beam5.0.png" /><br />56</li>
+				<li><img src="./image/sprite/bomb1.0.png" /><br />57</li>
+				<li><img src="./image/sprite/bomb2.0.png" /><br />58</li>
+				<li><img src="./image/sprite/bomb3.0.png" /><br />59</li>
+				<li><img src="./image/sprite/bomb4.0.png" /><br />5a</li>
+				<li><img src="./image/sprite/cloud.0.png" /><br />5b</li>
+				<li><img src="./image/sprite/forest.1.png" /><br />5c</li>
+				<li><img src="./image/sprite/block.0.png" /><br />5d</li>
+				<li><img src="./image/sprite/brick._.png" /><br />5e</li>
+				<li><img src="./image/sprite/desert._.png" /><br />5f</li>
+
+				<li><img src="./image/sprite/grass._.png" /><br />60</li>
+				<li><img src="./image/sprite/sand._.png" /><br />61</li>
+				<li><img src="./image/sprite/paddies._.png" /><br />62</li>
+				<li><img src="./image/sprite/marsh._.png" /><br />63</li>
+				<li><img src="./image/sprite/poison._.png" /><br />64</li>
+				<li><img src="./image/sprite/ladderleft.0.png" /><br />65</li>
+				<li><img src="./image/sprite/laddermiddle.0.png" /><br />66</li>
+				<li><img src="./image/sprite/ladderright.0.png" /><br />67</li>
+				<li><img src="./image/sprite/carback1.8.png" /><br />68</li>
+				<li><img src="./image/sprite/carback2.8.png" /><br />69</li>
+				<li><img src="./image/sprite/carback3.8.png" /><br />6a</li>
+				<li><img src="./image/sprite/carback4.8.png" /><br />6b</li>
+				<li><img src="./image/sprite/carlarge1.8.png" /><br />6c</li>
+				<li><img src="./image/sprite/carlarge2.8.png" /><br />6d</li>
+				<li><img src="./image/sprite/carlarge3.8.png" /><br />6e</li>
+				<li><img src="./image/sprite/carlarge4.8.png" /><br />6f</li>
+
+				<li><img src="./image/sprite/dragon1.f.png" /><br />70</li>
+				<li><img src="./image/sprite/dragon2.f.png" /><br />71</li>
+				<li><img src="./image/sprite/dragon3.f.png" /><br />72</li>
+				<li><img src="./image/sprite/dragon4.f.png" /><br />73</li>
+				<li><img src="./image/sprite/dragonw1.f.png" /><br />74</li>
+				<li><img src="./image/sprite/dragonw2.f.png" /><br />75</li>
+				<li><img src="./image/sprite/dragonw3.f.png" /><br />76</li>
+				<li><img src="./image/sprite/dragonw4.f.png" /><br />77</li>
+				<li><img src="./image/sprite/no.0.png" /><br />78</li>
+				<li><img src="./image/sprite/tri.0.png" /><br />79</li>
+				<li><img src="./image/sprite/yes.0.png" /><br />7a</li>
+				<li><img src="./image/sprite/ichigojam.1.png" /><br />7b</li>
+				<li><img src="./image/sprite/fork.1.png" /><br />7c</li>
+				<li><img src="./image/sprite/knife.1.png" /><br />7d</li>
+				<li><img src="./image/sprite/pancake.1.png" /><br />7e</li>
+				<li><img src="./image/sprite/saru.1.png" /><br />7f</li>
+
+				<li><img src="./image/sprite/mark_a.f.png" /><br/>80</li>
+				<li><img src="./image/sprite/mark_b.f.png" /><br/>81</li>
+				<li><img src="./image/sprite/mark_c.f.png" /><br/>82</li>
+				<li><img src="./image/sprite/mark_d.f.png" /><br/>83</li>
+				<li><img src="./image/sprite/mark_e.f.png" /><br/>84</li>
+				<li><img src="./image/sprite/mark_f.f.png" /><br/>85</li>
+				<li><img src="./image/sprite/mark_g.f.png" /><br/>86</li>
+				<li><img src="./image/sprite/mark_h.f.png" /><br/>87</li>
+				<li><img src="./image/sprite/mark_i.f.png" /><br/>88</li>
+				<li><img src="./image/sprite/mark_j.f.png" /><br/>89</li>
+				<li><img src="./image/sprite/mark_k.f.png" /><br/>8a</li>
+				<li><img src="./image/sprite/mark_l.f.png" /><br/>8b</li>
+				<li><img src="./image/sprite/mark_m.f.png" /><br/>8c</li>
+				<li><img src="./image/sprite/mark_n.f.png" /><br/>8d</li>
+				<li><img src="./image/sprite/mark_o.f.png" /><br/>8e</li>
+				<li><img src="./image/sprite/mark_p.f.png" /><br/>8f</li>
+
+				<li><img src="./image/sprite/mark_q.f.png" /><br/>90</li>
+				<li><img src="./image/sprite/mark_r.f.png" /><br/>91</li>
+				<li><img src="./image/sprite/mark_s.f.png" /><br/>92</li>
+				<li><img src="./image/sprite/mark_t.f.png" /><br/>93</li>
+				<li><img src="./image/sprite/mark_u.f.png" /><br/>94</li>
+				<li><img src="./image/sprite/mark_v.f.png" /><br/>95</li>
+				<li><img src="./image/sprite/mark_w.f.png" /><br/>96</li>
+				<li><img src="./image/sprite/mark_x.f.png" /><br/>97</li>
+				<li><img src="./image/sprite/mark_y.f.png" /><br/>98</li>
+				<li><img src="./image/sprite/mark_z.f.png" /><br/>99</li>
+				<li><img src="./image/sprite/mark_plus.f.png" /><br/>9a</li>
+				<li><img src="./image/sprite/mark_minus.f.png" /><br/>9b</li>
+				<li><img src="./image/sprite/mark_equal.f.png" /><br/>9c</li>
+				<li><img src="./image/sprite/mark_period.f.png" /><br/>9d</li>
+				<li><img src="./image/sprite/mark_comma.f.png" /><br/>9e</li>
+				<li><img src="./image/sprite/mark_colon.f.png" /><br/>9f</li>
+
+				<li><img src="./image/sprite/mark_number.f.png" /><br/>a0</li>
+				<li><img src="./image/sprite/mark_asterisk.f.png" /><br/>a1</li>
+				<li><img src="./image/sprite/mark_per.f.png" /><br/>a2</li>
+				<li><img src="./image/sprite/mark_solidus.f.png" /><br/>a3</li>
+				<li><img src="./image/sprite/mark_exclamation.f.png" /><br/>a4</li>
+				<li><img src="./image/sprite/mark_quotation.f.png" /><br/>a5</li>
+				<li><img src="./image/sprite/mark_0.f.png" /><br/>a6</li>
+				<li><img src="./image/sprite/mark_1.f.png" /><br/>a7</li>
+				<li><img src="./image/sprite/mark_2.f.png" /><br/>a8</li>
+				<li><img src="./image/sprite/mark_3.f.png" /><br/>a9</li>
+				<li><img src="./image/sprite/mark_4.f.png" /><br/>aa</li>
+				<li><img src="./image/sprite/mark_5.f.png" /><br/>ab</li>
+				<li><img src="./image/sprite/mark_6.f.png" /><br/>ac</li>
+				<li><img src="./image/sprite/mark_7.f.png" /><br/>ad</li>
+				<li><img src="./image/sprite/mark_8.f.png" /><br/>ae</li>
+				<li><img src="./image/sprite/mark_9.f.png" /><br/>af</li>
+			</ul>
+</div>
+
+		<div class="block" id="timbre">
+			<h2><img src="./image/timbre.png" alt="TOMBRE" /></h2>
+		</div>
+
+<div class="block" id="reference">
+<h2><img src="./image/reference.png" alt="REFERENCE" /></h2>
+<h3>■command</h3>
+<div>- ASCII文字列でコマンドを投げてください。
+- 各命令は大文字、最後にLFが必要、解析可能な命令長は
+　MAX:96(byte) です。
+
+　* PANCAKE CLEAR cn
+　　画面を消去します。
+　　cnには色番号を16進数で指定します。
+　　ex.
+　　　PANCAKE CLEAR 0A
+
+　* PANCAKE LINE x1 y1 x2 y2 cn
+　　線を引きます。
+　　ex.
+　　　PANCAKE LINE 00 00 10 0A 01
+
+　* PANCAKE CIRCLE xc yc ra cn
+　　円を描きます。
+　　xc,ycには中心座標を指定します。
+　　raには半径を指定します。
+　　(from 0.9)
+　　ex.
+　　　PANCAKE CIRCLE 10 10 10 01
+
+　* PANCAKE STAMP px py tc cc...c
+　　8x8の絵を描きます。
+　　px,pyには出力座標を指定します。
+　　tcには透明色を指定します。
+　　cc...cには左上から右方向への色番号を羅列します。
+　　ex.
+　　　PANCAKE STAMP 00 08 02 2282828222288822..
+
+　* PANCAKE STAMP1 px py cn cccccccccccccccc
+　　8x8の一色絵を描きます。
+　　px,pyには出力座標を指定します。
+　　cnには色を指定します。
+　　ccccccccccccccccには左上から右方向への0,1を羅列します。
+　　0は透明になります。
+　　(from 0.8)
+　　ex.
+　　　PANCAKE STAMP1 00 08 02 FF00FF00FF00FF00
+
+　* PANCAKE STAMPS px py si [fs] [ra]
+　　px,pyには出力座標を指定します。
+　　si には組み込みスプライト画像番号を指定します。
+　　fs を指定すると左右反転の制御ができます。ON/OFF[01/00] (Default:00)
+　　ra を指定すると角度の制御ができます。[00:0°,01:-90°,02:180°,03:90°] (Default:00)
+　　(from 1.1)
+　　ex.
+　　　PANCAKE STAMPS 24 12 15
+　　　PANCAKE STAMPS 24 12 15 01 02
+
+　* PANCAKE IMAGE in
+　　組み込み画像を描きます。
+　　ex.
+　　　PANCAKE IMAGE 02
+
+　* PANCAKE VIDEO os
+　　ビデオ出力をON/OFF[01/00]します。
+　　(from 0.8)
+　　ex.
+　　　PANCAKE VIDEO 00
+
+　* PANCAKE SPRITE START in
+　　スプライト処理を開始します。
+　　in には背景に使う組み込み画像番号を指定します。
+　　背景をベタ塗りにする場合は in のHighBitsを1にします。
+　　[ex. 12 == 背景赤]
+　　スプライト処理を開始するとLINEやIMAGEなどは使えません。
+　　スプライト処理を停止するには in を FF にします。
+　　(from 0.8)
+　　ex.
+　　　PANCAKE SPRITE START 03
+
+　* PANCAKE SPRITE CREATE sn si
+　　スプライトを作ります。
+　　スプライトは16枚用意されています。
+　　sn はスプライト番号 0〜15 です。
+　　si には組み込みスプライト画像番号を指定します。
+　　スプライトを消すには si を FF にします。
+　　スプライトは番号が大きい方が上に重なります。
+　　(from 0.8)
+　　ex.
+　　　PANCAKE SPRITE CREATE 00 15
+
+　* PANCAKE SPRITE MOVE sn px py
+　　スプライトを移動します。
+　　sn は CREATE した番号です。
+　　px,pyは座標、スプライトの左上が起点です。
+　　(from 0.8)
+　　ex.
+　　　PANCAKE SPRITE MOVE 00 10 10
+
+　* PANCAKE SPRITE FLIP sn fs
+　　スプライトを左右反転します。
+　　sn は CREATE した番号です。
+　　fs は ON/OFF[01/00]です。
+　　(from 1.0)
+　　ex.
+　　　PANCAKE SPRITE FLIP 00 01
+
+　* PANCAKE SPRITE ROTATE sn ra
+　　スプライトを回転します。
+　　sn は CREATE した番号です。
+　　ra は 角度[00:0°,01:-90°,02:180°,03:90°]です。
+　　(from 1.0)
+　　ex.
+　　　PANCAKE SPRITE ROTATE 00 01
+
+　* PANCAKE SPRITE USER sn tc cc...c
+　　スプライトを自作します。(2個)
+　　sn は 番号[FD,FE]です。
+　　tcには透明色を指定します。
+　　cc...cには左上から右方向への色番号を羅列します。
+　　(from 1.0)
+　　ex.
+　　　PANCAKE SPRITE USER FE 02 22828282222..
+
+　* PANCAKE SOUND o0 s0 o1 s1 o2 s2 o3 s3
+　　4ch同時に音を鳴らします。
+　　o0〜o3 はオクターブ(0〜4〜7)、s0〜s3 は音程(0〜b)です。
+　　音程eはノイズ音です。
+　　s0〜s3 のHighBits4は音色(0〜3)です。
+　　音を消すには s0〜s3 を FF にします。
+　　(from 0.8)
+　　ex.
+　　　PANCAKE SOUND 04 00 04 04 04 07 04 FF
+　　　PANCAKE SOUND 04 20 04 24 04 27 04 FF
+
+　* PANCAKE SOUND1 cn on sn
+　　1chのみ音を鳴らします。
+　　(from 0.8)
+　　ex.
+　　　PANCAKE SOUND1 00 04 07
+
+　* PANCAKE MUSIC SCORE ch pn tt mm
+　　MMLをサウンドchに登録します。
+　　ch: チャンネル(00〜03)
+　　pn: 01:即再生、00:後で再生
+　　tt: テンポ(0〜F)+音色 [ex. 30 == テンポ3、音色0]
+　　mm: MML(MAX:バイナリ変換後64byte)
+　　(from 0.9)
+　　ex.
+　　　PANCAKE MUSIC SCORE 00 01 30 $CDEFGAB>C
+
+　* PANCAKE MUSIC PLAY ss [ch]
+　　音楽再生をSTART/STOP[01/00]します。
+　　"MUSIC SCORE"または"MUSIC LOAD"コマンドで
+　　4ch分のMMLを先に登録して置き、一気に再生可能です。
+　　ch(00〜03)を指定すると、そのチャンネルだけ制御できます。
+　　(from 0.9)
+　　ex.
+　　　PANCAKE MUSIC PLAY 01
+　　　PANCAKE MUSIC PLAY 01 00 (from 1.1)
+
+　* PANCAKE MUSIC LOAD ch mn
+　　組み込みMMLをサウンドchに登録します。
+　　mn に組み込みMML番号(00〜03)を指定します。
+　　サウンドchを初期状態にしたい場合は mn を FF にします。
+　　(from 1.1)
+　　ex.
+　　　PANCAKE MUSIC LOAD 00 01
+
+　* PANCAKE RESET
+　　PanCakeを初期状態にもどします。
+　　スプライトや音などがすべて初期状態に戻ります。
+　　(from 0.9)
+　　ex.
+　　　PANCAKE RESET
+
+　* PANCAKE OUT pf
+　　OUTポートに出力します。
+　　pfにはONにするポート番号を16進数で指定します。
+　　ex.
+　　　PANCAKE OUT FF
+
+　* PANCAKE BPS rrrr
+　　通信速度を設定します。(Default:115,200)
+　　rrrrには速度を16進数で指定します。
+　　0000を指定すると115,200になります。
+　　(from 1.0)
+　　ex.
+　　　PANCAKE BPS 2580
+</div>
+
+	<h3>■binary-command</h3>
+	<div>- テキストコマンドに対応したバイナリコマンドもあります。
+- 詳しくは readme.txt をご覧ください。</div>
+</div>
+
+		<div class="block" id="circuit">
+			<h2><img src="./image/circuit.png" alt="CIRCUIT" /></h2>
+		</div>
+
+		<div class="block" id="sample">
+			<h2><img src="./image/sample.png" alt="SAMPLE GAME" /></h2>
+
+			<h3>■コマンドタイピングゲーム</h3>
+			<p><span>PanCakeサンプルゲームに第2弾登場！</span><br />電子工作マガジンでPanCakeが特集されました！<br />マガジンにはPanCakeのサンプルゲームがもっと掲載されているので遊んで見てください！<br /s><a href="https://www.dempa.co.jp/denshikousaku_01.php" target="_blank">電子工作マガジン</a></p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/onpNFHaYm8k" frameborder="0" allowfullscreen></iframe>
+<br /><br />
+<div>
+9 CLV:Z=128:?"PC RESET":?CHR$(Z,4,6,1):D=8:LC 0,-1<br />
+10 [0]=83:[1]=80:[2]=82:[3]=73:[4]=84:[5]=69<br />
+11 [8]=67:[9]=82:[10]=69:[11]=65:[12]=84:[13]=69<br />
+12 [16]=83:[17]=67:[18]=79:[19]=82:[20]=69<br />
+13 [24]=77:[25]=85:[26]=83:[27]=73:[28]=67<br />
+14 [32]=82:[33]=78:[34]=68<br />
+15 [40]=77:[41]=79:[42]=86:[43]=69<br />
+16 [48]=83:[49]=79:[50]=85:[51]=78:[52]=68<br />
+98 CLT<br />
+99 S=RND(7)<br />
+100 GOSUB 400:GOSUB 700<br />
+110 GOSUB 600<br />
+120 H=H+1:IF H&lt;10 GOTO 99<br />
+130 T=TICK():GOSUB 400:?CHR$(Z,5,7,15,T/60/10+166):?CHR$(Z,5,7,14,T/60%10+166):?CHR$(Z,6,8,14,8,0):END<br />
+400 FOR I=0 TO D-1 STEP1<br />
+410 ?CHR$(Z,5,7,I,255):NEXT:RETURN<br />
+600 M=0:T=0:U=2<br />
+610 C=[S+M]:IF C=0 GOTO 650<br />
+620 K=INKEY()<br />
+621 IF T%25=0 U=U*-1:?CHR$(Z,6,8,M,X,Y+U)<br />
+622 IF K=0 T=T+1:GOTO 620<br />
+630 IF K!=C ?"PC MUSIC SCORE 00 01 32 &lt;G~R":GOTO 620<br />
+640 ?"PC MUSIC SCORE 00 01 20 BAR":?CHR$(Z,6,8,M,X,Y):M=M+1:X=X+8:GOTO 610<br />
+650 ?"PC MUSIC SCORE 00 01 21 &gt;&gt;BGBGR":RETURN<br />
+700 S=S*D:L=0<br />
+710 C=[S+L]:IF C!=0 C=C+63:?CHR$(Z,5,7,L,C):L=L+1:GOTO 710<br />
+720 X=RND(80-8*L):Y=RND(37)<br />
+721 FOR I=0 TO L-1 STEP1<br />
+722 ?CHR$(Z,6,8,I,X+8*I,Y):NEXT:RETURN<br />
+</div>
+<br /><br />
+
+			<h3>■りんごをさっちゃん</h3>
+			<p>IchigoJamによるサンプルゲーム第1弾！<span>世界記録　42点！</span></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LjZ03dL1wjA" frameborder="0" allowfullscreen></iframe>
+<br /><br />
+<div>
+100 'LINGO WO SACCHAN<br />
+110 X=36:F=0:B=X+7:M=RND(72):N=0:R=0:S=0:A=1<br />
+120 ?"PC RESET"<br />
+130 ?"PC MUSIC SCORE 00 00 81 $C&gt;C&lt;EG"<br />
+140 ?"PC MUSIC SCORE 01 00 80 RRRRR$RRRRRRRRCCDE~~~~EFED~~~~DEDC~~~~"<br />
+150 ?"PC MUSIC PLAY 01"<br />
+160 ?"PC SPRITE START 01"<br />
+170 ?"PC SPRITE CREATE 00 0B"<br />
+180 ?"PC SPRITE CREATE 02 5D"<br />
+190 ?"PC SPRITE CREATE 01 1F"<br />
+200 ?"PC SPRITE CREATE 03 A6"<br />
+210 ?"PC SPRITE CREATE 04 A6"<br />
+220 ?"PC SPRITE MOVE 03 00 00"<br />
+230 ?"PC SPRITE MOVE 04 08 00"<br />
+240 ?CHR$(#80,#6,#8,0,X,35)<br />
+250 ?CHR$(#80,#5,#10,0,F)<br />
+260 ?CHR$(#80,#6,#8,2,B,35)<br />
+270 ?CHR$(#80,#5,#10,2,F)<br />
+280 ?CHR$(#80,#6,#8,1,M,N)<br />
+290 ?CHR$(#80,#5,#11,1,R)<br />
+300 ?CHR$(#80,#5,#7,3,#A6+S/10)<br />
+310 ?CHR$(#80,#5,#7,4,#A6+S%10)<br />
+320 K=INKEY()<br />
+330 IF K=28 X=X-4:F=1:B=X-7<br />
+340 IF K=29 X=X+4:F=0:B=X+7<br />
+350 R=(R+1)%4:N=N+RND(A+1)<br />
+360 IF (35&lt;N)*(B-4&lt;M)*(M&lt;B+4) S=S+1:?"PC MUSIC SCORE 03 01 22 &gt;&gt;CE&gt;C"<br />
+370 IF (35&lt;N)*(X-4&lt;M)*(M&lt;X+4) GOTO 400<br />
+380 IF 35&lt;N M=RND(72):N=0:A=(S+10)/10<br />
+390 GOTO 240<br />
+400 ?"PC MUSIC PLAY 00"<br />
+410 ?"PC MUSIC SCORE 03 01 40 &lt;F~ED~&lt;B&gt;C~~~"
+</div>
+</div>
+
+		<div class="block" id="support">
+			<h2><img src="./image/support.png" alt="SUPPORT" /></h2>
+			<p>PanCakeに関するお問い合わせはこちら</p>
+			<p class="photo"><img src="./image/contact.png" alt="" /></p>
+		</div>
+
+		<div class="block">
+			<p class="photo"><a href="https://www.facebook.com/groups/568222796651326/" target="_blank"><img src="./image/support_pancakefan.png" alt="PanCake-FAN" /></a></p>
+		</div>
+
+		<div class="block" id="ccby">
+			<p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
+			<p>PanCakeのリソース画像(PALLETE,IMAGE,SPRITE,TIMBRE,ELECTRIC CIRCUIT)は<br/><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">クリエイティブ・コモンズ 表示 - 非営利 4.0 国際 ライセンスの下に提供されています。</a></p>
+		</div>
+
+		<div id="footer">
+			<p id="pagetop"><a href="#top">↑ページの先頭へ</a></p>
+			<p id="footer"><a href="http://pcn.club/" target="_blank"><img src="./image/pcn.png" alt="PCN" /></a></p>
+			<p id="copyright"><img src="./image/copyright.png" alt="&copy;PCN.All Rights Reserved." /></p>
+		</div>
+	</div><!-- /#container -->
+
+</body>
+</html>
