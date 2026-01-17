@@ -1,47 +1,17 @@
-# PixelJam
+# PixelJam.js
+
+PixelJam.js は、コンパクトなJS用ミニゲームライブラリです
 
 ## sample
 
 ```html
 <script type="module">
-import { cls, rectfill, print, circfill, line, btn, spr, wait } from "https://ichigojam.github.io/PixelJam/PixelJam.js";
-import { BLACK, WHITE, RED, PINK, ORANGE, YELLOW, L_BROWN, BROWN, L_GREEN, GREEN, L_BLUE, BLUE, D_BLUE, B_PURPLE, R_PURPLE, GRAY } from "https://ichigojam.github.io/PixelJam/PANCAKE_COLORS.js";
-
-const ICON_I = `
-  00333300
-  03000030
-  300AA003
-  30000003
-  300AA003
-  30088003
-  03000030
-  00333300
-`;
+import { pj } from "https://js.sabae.cc/pj.js";
 
 for (let i = 0;; i++) {
-  const frame = i;
-  const x = 64 + Math.sin(frame * 0.05) * 30;
-  const y = 64 + Math.cos(frame * 0.04) * 30;
-  cls(WHITE);
-  rectfill(0, 0, 128, 20, D_BLUE);
-  print("PixelJam.js", 2, 2, YELLOW);
-  print("ARROWS + Space/Z/X", 2, 10, R_PURPLE);
-  circfill(x, y, 7, btn(4) ? RED : PINK);
-  spr(ICON_I, x + 10, y - 3);
-  line(0, 127, 127, 0, GREEN);
-
-  const y0 = 30;
-  const w = 5;
-  rectfill(2, y0, w, w, btn(0) ? BLACK : GRAY); // left
-  rectfill(2 + w + w, y0, w, w, btn(1) ? BLACK : GRAY); // right
-  rectfill(2 + w, y0 - w, w, w, btn(2) ? BLACK : GRAY); // up
-  rectfill(2 + w, y0 + w, w, w, btn(3) ? BLACK : GRAY); // down
-
-  rectfill(2 + w * 4, y0, w, w, btn(4) ? BLACK : GRAY); // space
-  rectfill(2 + w * 6, y0, w, w, btn(5) ? BLACK : GRAY); // x
-  rectfill(2 + w * 8, y0, w, w, btn(6) ? BLACK : GRAY); // z
-  await wait(1);
+  pj.cls(i % 16);
+  pj.print(i, 10, 10);
+  await pj.wait(10);
 }
-
 </script>
 ```
