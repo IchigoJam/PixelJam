@@ -10,7 +10,7 @@ const src = document.createElement("div");
 src.textContent = "ℹ️";
 src.style = "position: absolute; font-size: 3vmin; bottom: 3px; right: 5px;";
 document.body.appendChild(src);
-src.onclick = () => open("https://github.com/IchigoJam/PixcelJam/", "_blank");
+src.onclick = () => open("https://github.com/IchigoJam/PixelJam/", "_blank");
 
 const W = 128;
 const H = 128;
