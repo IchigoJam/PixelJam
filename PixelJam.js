@@ -34,8 +34,6 @@ addEventListener("touchend", e => {
 });
 addEventListener("pointerdown", (e) => {
   keys["Space"] = 1;
-  c.focus();
-  e.preventDefault();
 }, { passive: false });
 addEventListener("pointerup", (e) => {
   keys["Space"] = 0;
