@@ -23,8 +23,6 @@ const pix = img.data;
 const pal = PANCAKE_COLORS;
 
 const keys = Object.create(null);
-let t0 = 0;
-let frame = 0;
 addEventListener("keydown", e => keys[e.code] = 1);
 addEventListener("keyup", e => keys[e.code] = 0);
 addEventListener("touchstart", e => {
@@ -182,6 +180,8 @@ export const setLoop = (_tic) => {
   tic = _tic;
 };
 
+let t0 = 0;
+let frame = 0;
 function loop(t) {
   const dt = (t - t0) / 1000;
   t0 = t;
