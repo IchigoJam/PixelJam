@@ -3,7 +3,7 @@ import { PANCAKE_COLORS } from "./PANCAKE_COLORS.js";
 
 const c = document.createElement("canvas");
 document.body.appendChild(c);
-document.body.style = "margin: 0; text-align: center; background-color: black; overflow: hidden;";
+document.body.style = "margin: 0; text-align: center; background-color: black; overflow: hidden; user-select: none;";
 c.style = "width: 100vmin; height: 100vmin; display; image-rendering: pixelated;"
 
 const src = document.createElement("div");
@@ -30,8 +30,17 @@ addEventListener("keyup", e => keys[e.code] = 0);
 
 addEventListener("mousedown", e => keys["Space"] = 1);
 addEventListener("mouseup", e => keys["Space"] = 0);
-addEventListener("touchstart", e => keys["Space"] = 1);
+addEventListener("touchstart", e => {
+  keys["Space"] = 1;
+  e.preventDefault();
+}, { passive: false });
 addEventListener("touchend", e => keys["Space"] = 0);
+
+addEventListener("pointerdown", (e) => { // 画像上の拡大・プレビュー系につながる挙動を止める
+  e.preventDefault();
+}, { passive: false });
+
+addEventListener("contextmenu", (e) => e.preventDefault());
 
 export function cls(ci = 0) {
   const [r, g, b] = pal[ci & 15];
