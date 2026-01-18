@@ -53,7 +53,7 @@ export function cls(ci = 0) {
     pix[i + 3] = 255;
   }
 }
-export function pset(x, y, ci = 1) {
+export function pset(x, y, ci = 7) {
   x |= 0;
   y |= 0;
   if (x < 0 || y < 0 || x >= W || y >= H) return;
@@ -64,7 +64,7 @@ export function pset(x, y, ci = 1) {
   pix[i + 2] = b;
   pix[i + 3] = 255;
 }
-export function rectfill(x0, y0, w, h, ci = 1) {
+export function rectfill(x0, y0, w, h, ci = 7) {
   x0 |= 0;
   y0 |= 0;
   w |= 0;
@@ -75,7 +75,7 @@ export function rectfill(x0, y0, w, h, ci = 1) {
     }
   }
 }
-export function line(x0, y0, x1, y1, ci = 1) {
+export function line(x0, y0, x1, y1, ci = 7) {
   x0 |= 0;
   y0 |= 0;
   x1 |= 0;
@@ -99,7 +99,7 @@ export function line(x0, y0, x1, y1, ci = 1) {
     }
   }
 }
-export function circfill(cx, cy, r, ci = 1) {
+export function circfill(cx, cy, r, ci = 7) {
   cx |= 0;
   cy |= 0;
   r |= 0;
@@ -109,7 +109,7 @@ export function circfill(cx, cy, r, ci = 1) {
     }
   }
 }
-export function print(s, x, y, ci = 1) {
+export function print(s, x, y, ci = 7) {
   x |= 0;
   y |= 0;
   s = new String(s).toUpperCase();
