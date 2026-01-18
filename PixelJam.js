@@ -139,26 +139,19 @@ export function flip() {
   g.drawImage(c, 0, 0, W, H);
 };
 
-// 8x8 4bpp sprite from hex (64 hex chars = 8*8 pixels)
-// each hex digit is a palette index 0..f (0 can be treated as transparent if you want)
-function sprite8x8_4bpp_fromHex(hex) {
-  hex = hex.replace(/^0x/i, "").replace(/\s+/g, "").toLowerCase();
-  if (hex.length !== 64) throw new Error("need 64 hex chars for 8x8 4bpp (one nibble per pixel)");
-  const px = new Uint8Array(64);
-  for (let i = 0; i < 64; i++) px[i] = parseInt(hex[i], 16);
-  return px;
-}
-
-export function spr(hexOrPx, x, y, w = 8, transparentIndex = 0) {
-  const px = typeof hexOrPx === "string" ? sprite8x8_4bpp_fromHex(hexOrPx) : hexOrPx;
+export function spr(hex, x, y, w = 8, transparentIndex = 0) {
   x |= 0;
   y |= 0;
+  w |= 0;
   let i = 0;
-  for (let yy = 0; yy < 8; yy++) {
-    for (let xx = 0; xx < 8; xx++, i++) {
-      const ci = px[i] & 15;
-      if (ci !== (transparentIndex & 15)) pset(x + xx, y + yy, ci);
+  const HEX = "0123456789ABCDEF";
+  for (const c of hex) {
+    if (HEX.indexOf(c.toUpperCase()) == -1) continue;
+    const ci = parseInt(c, 16);
+    if (ci != transparentIndex) {
+      pset(x + i % w, y + Math.floor(i / w), ci);
     }
+    i++;
   }
 }
 
