@@ -27,18 +27,20 @@ let t0 = 0;
 let frame = 0;
 addEventListener("keydown", e => keys[e.code] = 1);
 addEventListener("keyup", e => keys[e.code] = 0);
-
-addEventListener("mousedown", e => keys["Space"] = 1);
-addEventListener("mouseup", e => keys["Space"] = 0);
 addEventListener("touchstart", e => {
   keys["Space"] = 1;
   e.preventDefault();
 }, { passive: false });
-addEventListener("touchend", e => keys["Space"] = 0);
-
-addEventListener("pointerdown", (e) => { // 画像上の拡大・プレビュー系につながる挙動を止める
+addEventListener("touchend", e => {
+  keys["Space"] = 0;
+});
+addEventListener("pointerdown", (e) => {
+  keys["Space"] = 1;
   e.preventDefault();
 }, { passive: false });
+addEventListener("pointerup", (e) => {
+  keys["Space"] = 0;
+});
 
 addEventListener("contextmenu", (e) => e.preventDefault());
 
@@ -51,7 +53,7 @@ export function cls(ci = 0) {
     pix[i + 3] = 255;
   }
 }
-export function pset(x, y, ci = 7) {
+export function pset(x, y, ci = 1) {
   x |= 0;
   y |= 0;
   if (x < 0 || y < 0 || x >= W || y >= H) return;
@@ -62,7 +64,7 @@ export function pset(x, y, ci = 7) {
   pix[i + 2] = b;
   pix[i + 3] = 255;
 }
-export function rectfill(x0, y0, w, h, ci = 7) {
+export function rectfill(x0, y0, w, h, ci = 1) {
   x0 |= 0;
   y0 |= 0;
   w |= 0;
@@ -73,7 +75,7 @@ export function rectfill(x0, y0, w, h, ci = 7) {
     }
   }
 }
-export function line(x0, y0, x1, y1, ci = 7) {
+export function line(x0, y0, x1, y1, ci = 1) {
   x0 |= 0;
   y0 |= 0;
   x1 |= 0;
@@ -97,7 +99,7 @@ export function line(x0, y0, x1, y1, ci = 7) {
     }
   }
 }
-export function circfill(cx,cy,r,ci=7) {
+export function circfill(cx, cy, r, ci = 1) {
   cx |= 0;
   cy |= 0;
   r |= 0;
@@ -107,7 +109,7 @@ export function circfill(cx,cy,r,ci=7) {
     }
   }
 }
-export function print(s,x,y,ci = 7) {
+export function print(s, x, y, ci = 1) {
   x |= 0;
   y |= 0;
   s = new String(s).toUpperCase();
@@ -134,7 +136,7 @@ export function btn(i = 4) { // 0..5 = ←→↑↓ space Z X
   ];
   return !!btns[i];
 }
-export function flip() {
+function flip() {
   g.putImageData(img, 0, 0);
   g.drawImage(c, 0, 0, W, H);
 };
@@ -187,4 +189,3 @@ function loop(t) {
   frame++;
   requestAnimationFrame(loop);
 };
-
