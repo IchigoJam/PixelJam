@@ -30,6 +30,8 @@ addEventListener("keyup", e => keys[e.code] = 0);
 
 addEventListener("mousedown", e => keys["Space"] = 1);
 addEventListener("mouseup", e => keys["Space"] = 0);
+addEventListener("touchstart", e => keys["Space"] = 1);
+addEventListener("touchend", e => keys["Space"] = 0);
 
 export function cls(ci = 0) {
   const [r, g, b] = pal[ci & 15];
