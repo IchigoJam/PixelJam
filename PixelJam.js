@@ -139,7 +139,7 @@ export function flip() {
   g.drawImage(c, 0, 0, W, H);
 };
 
-export function spr(hex, x, y, w = 8, transparentIndex = 0) {
+export function stamp(hex, x, y, w = 8, transparentIndex = 0) {
   x |= 0;
   y |= 0;
   w |= 0;
@@ -154,6 +154,8 @@ export function spr(hex, x, y, w = 8, transparentIndex = 0) {
     i++;
   }
 }
+
+export const spr = stamp;
 
 cls();
 
