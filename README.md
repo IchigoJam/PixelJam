@@ -21,11 +21,11 @@ for (let i = 0;; i++) {
 ### functions
 
 - cls(color = 0) // 画面クリア
-- pset(x, y, color = 1) // 点描画
-- rectfill(x0, y0, w, h, color = 1) // 矩形描画
-- line(x0, y0, x1, y1, color = 1) // 線描画
-- colorrcfill(cx, cy, r, color = 1) // 円描画
-- print(s, x, y, color = 1) // 文字描画
+- pset(x, y, color = 7) // 点描画
+- rectfill(x0, y0, w, h, color = 7) // 矩形描画
+- line(x0, y0, x1, y1, color = 7) // 線描画
+- colorrcfill(cx, cy, r, color = 7) // 円描画
+- print(s, x, y, color = 7) // 文字描画
 - stamp(hex, x, y, w = 8, transparentColor = 0) // スタンプ描画 0-Fで色指定
 - btn(n = 4) // ボタンが押下チェック 0..6 = ←→↑↓ space Z X
 
