@@ -28,6 +28,7 @@ for (let i = 0;; i++) {
 - print(s, x, y, color = 7) // 文字描画
 - stamp(hex, x, y, w = 8, transparentColor = 0) // スタンプ描画 0-Fで色指定
 - btn(n = 4) // ボタンが押下チェック 0..6 = ←→↑↓ space Z X
+- await wait(nframe = 1) // nframe分(1/60秒)だけ待つ ※ await を付けて呼び出す!
 
 ### color number
 
