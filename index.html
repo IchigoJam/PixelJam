@@ -2,8 +2,8 @@
 <title>PixelJam</title>
 </head><body>
 <script type="module">
-import { cls, rectfill, print, circfill, line, btn, spr, wait } from "./PixelJam.js";
-import { BLACK, WHITE, RED, PINK, ORANGE, YELLOW, L_BROWN, BROWN, L_GREEN, GREEN, L_BLUE, BLUE, D_BLUE, B_PURPLE, R_PURPLE, GRAY } from "./PANCAKE_COLORS.js";
+import { cls, rectfill, print, circfill, line, btn, stamp, wait } from "./PixelJam.js";
+import { BLACK, WHITE, RED, PINK, ORANGE, YELLOW, L_BROWN, BROWN, L_GREEN, GREEN, L_BLUE, BLUE, D_BLUE, B_PURPLE, R_PURPLE, GRAY } from "https://ichigojam.github.io/PanCake-res/PANCAKE_COLORS.js";
 
 const ICON_I = `
   00333300
@@ -55,8 +55,8 @@ for (let i = 0;; i++) {
   print("PixelJam.js", 2, 2, YELLOW);
   print("ARROWS + Space/Z/X", 2, 10, R_PURPLE);
   circfill(x, y, 7, btn(4) ? RED : PINK);
-  spr(ICON_I, x + 10, y - 3);
-  spr(ICON_SACCHAN_1, x + 20, y - 3, 1);
+  stamp(ICON_I, x + 10, y - 3);
+  stamp(ICON_SACCHAN_1, x + 20, y - 3, 1);
   line(0, 127, 127, 0, GREEN);
 
   const y0 = 30;
