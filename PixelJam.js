@@ -1,5 +1,6 @@
 import { font3x5 } from "./font3x5.js";
-import { PANCAKE_COLORS } from "./PANCAKE_COLORS.js";
+import { PANCAKE_COLORS } from "https://ichigojam.github.io/PanCake-res/PANCAKE_COLORS.js";
+import { PANCAKE_SPRITES } from "https://ichigojam.github.io/PanCake-res/PANCAKE_SPRITES.js";
 
 const c = document.createElement("canvas");
 document.body.appendChild(c);
@@ -138,7 +139,13 @@ function flip() {
   g.drawImage(c, 0, 0, W, H);
 };
 
-export function stamp(hex, x, y, w = 8, transparentIndex = 0) {
+export function stamp(hexOrN, x, y, w = 8, transparentIndex = 0) {
+  const spr = typeof hexOrN == "number" ? PANCAKE_SPRITES[hexOrN] : null;
+  const hex = spr ? spr.txt : hexOrN;
+  transparentIndex = spr ? spr.transparent : transparentIndex;
+
+  //console.log(hexOrN, hex, w)
+  if (typeof hex != "string") return;
   x |= 0;
   y |= 0;
   w |= 0;
@@ -153,7 +160,6 @@ export function stamp(hex, x, y, w = 8, transparentIndex = 0) {
     i++;
   }
 }
-
 export const spr = stamp;
 
 cls();
