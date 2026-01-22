@@ -26,7 +26,7 @@ for (let i = 0;; i++) {
 - line(x0, y0, x1, y1, color = 7) // 線描画
 - colorrcfill(cx, cy, r, color = 7) // 円描画
 - print(s, x, y, color = 7) // 文字描画
-- stamp(hex, x, y, w = 8, transparentColor = 0) // スタンプ描画 0-Fで色指定
+- stamp(hex_or_n, x, y, w = 8, transparentColor = 0) // スタンプ描画 0-Fで色指定するHEXまたは[PanCake](https://github.com/IchigoJma/PanCake-res/)のスプライト番号
 - btn(n = 4) // ボタンが押下チェック 0..6 = ←→↑↓ space Z X
 - await wait(nframe = 1) // nframe分(1/60秒)だけ待つ ※ await を付けて呼び出す!
 
