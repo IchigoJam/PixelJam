@@ -1,5 +1,6 @@
 import { font3x5 } from "./font3x5.js";
 import { PANCAKE_COLORS } from "https://ichigojam.github.io/PanCake-res/PANCAKE_COLORS.js";
+import { PANCAKE_SPRITES } from "https://ichigojam.github.io/PanCake-res/PANCAKE_SPRITES.js";
 
 const c = document.createElement("canvas");
 document.body.appendChild(c);
@@ -138,7 +139,8 @@ function sprite8x8_4bpp_fromHex(hex) {
   return px;
 }
 
-export function stamp(hexOrPx, x, y, w = 8, transparentIndex = 0) {
+export function stamp(hexOrPxOrN, x, y, w = 8, transparentIndex = 0) {
+  const hexOrPx = typeof hexOrPxOrN == "number" ? PANCAKE_SPRITES[hexOrPxOrN].txt : hexOrPxOrN;
   const px = typeof hexOrPx === "string" ? sprite8x8_4bpp_fromHex(hexOrPx) : hexOrPx;
   x |= 0;
   y |= 0;
@@ -182,4 +184,3 @@ function loop(t) {
   frame++;
   requestAnimationFrame(loop);
 };
-
