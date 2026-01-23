@@ -107,7 +107,7 @@ export function circfill(cx, cy, r, ci = 7) {
     }
   }
 }
-export function print(s, x, y, ci = 7) {
+export function text(s, x, y, ci = 7) {
   x |= 0;
   y |= 0;
   s = new String(s).toUpperCase();
@@ -122,6 +122,8 @@ export function print(s, x, y, ci = 7) {
     x += 4;
   }
 }
+export const print = text;
+
 export function btn(i = 4) { // 0..5 = ←→↑↓ space Z X
   const btns = [
     keys.ArrowLeft,
